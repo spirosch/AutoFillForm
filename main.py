@@ -5,34 +5,36 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.keys import Keys
 import time
 
-username = "user6861242892"
-password = "6228550"
+username = "test"
+password = "test"
 # First Page resources
-distinctive_title = "ΒΙΓΛΑ ΕΝΕΡΓΕΙΑΚΗ ΜΟΝΟΠΡΟΣΩΠΗ ΙΚΕ"
-residence_headquarters = "ΧΑΡΑΣΟΣ ΔΗΜΟΣ ΧΕΡΣΟΝΗΣΟΥ"
-tax_mail = "Λ.ΠΑΠΑΝΑΣΤΑΣΙΟΥ 23Α, ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ, Τ.Κ 71306"
-phone_number = "6952652565"
-email = "boulbasisdim@gmail.com"
+distinctive_title = "test"
+residence_headquarters = "test"
+tax_mail = "test"
+phone_number = "test"
+email = "test"
 
 # Second Page resources
-legal_representative = "ΜΠΟΥΛΜΠΑΣΗΣ ΔΗΜΗΤΡΙΟΣ"
-VAT_number = "141374588"
-legal_headquarters = "ΜΝΗΣΙΚΛΗ 41 71305 ΗΡΑΚΛΕΙΟ"
-legal_taxmail = "Λ.ΠΑΠΑΝΑΣΤΑΣΙΟΥ 23Α, ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ, Τ.Κ 71306"
-legal_phone_number = "2810244114"
-legal_email = "boulbasisdim@gmail.com"
+legal_representative = "test"
+VAT_number = "test"
+legal_headquarters = "test"
+legal_taxmail = "test"
+legal_phone_number = "test"
+legal_email = "test"
+
 # Third Page resources
-engineer_name = "ΚΩΝΣΤΑΝΤΙΝΟΣ ΣΥΡΙΓΩΝΑΚΗΣ"
-engineer_specialty = "ΗΛΕΚΤΡΟΛΟΓΟΣ ΜΗΧΑΝΙΚΟΣ"
-engineer_VAT = "116656649"
-engineer_residence = "ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ"
-engineer_taxmail = "Λ.ΠΑΠΑΝΑΣΤΑΣΙΟΥ 23Α, ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ, Τ.Κ 71306"
-engineer_phone_number = "2815103020"
-engineer_email = "info@palsengineering.com"
+engineer_name = "test"
+engineer_specialty = "test"
+engineer_VAT = "test"
+engineer_residence = "test"
+engineer_taxmail = "test"
+engineer_phone_number = "test"
+engineer_email = "test"
 
 # Fifth Page resources
-toponym_place = "ΒΙΓΛΑ"
-postal_code = "70014"
+toponym_place = "test"
+postal_code = "test"
+
 
 
 def dropdown_selection(box_select_id, choose_option):
