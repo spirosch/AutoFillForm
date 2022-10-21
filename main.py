@@ -34,6 +34,10 @@ engineer_email = "test"
 # Fifth Page resources
 toponym_place = "test"
 postal_code = "test"
+region = "ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ"
+regional_unity = "ΘΗΡΑΣ"
+municipality = "ΣΙΚΙΝΟΥ"
+city_section = "ΣΙΚΙΝΟΥ"
 
 
 
@@ -52,6 +56,16 @@ def auto_suggestion_dropdown(xpath, option):
     driver.find_element(By.XPATH, xpath).click()
     driver.find_element(By.XPATH, "/html/body/span/span/span[1]/input").send_keys(option)
     driver.find_element(By.XPATH, "/html/body/span/span/span[1]/input").send_keys(Keys.ENTER)
+
+
+def attach_files(attached_file_id, path_of_file, upload_file):
+    """In double quotes:
+
+    Right click on attach file button and copy the ID, Path of file,
+
+        Right click and copy ID of the upload button"""
+    driver.find_element(By.XPATH, attached_file_id).send_keys(path_of_file)
+    driver.find_element(By.ID, upload_file).click()
 
 
 chrome_driver_path = "C:\Development/chromedriver.exe"
@@ -143,12 +157,49 @@ driver.find_element(By.ID, "next").click()
 
 # Filling out Fifth Page / Στοιχεία θέσης εγκατάστασης Σταθμού
 driver.find_element(By.ID, "thes").send_keys(toponym_place)
-auto_suggestion_dropdown('''//*[@id="select2-klpe-container"]/span''', "ΚΡΗΤΗΣ")
-auto_suggestion_dropdown('''//*[@id="select2-klno-container"]/span''', "ΗΡΑΚΛΕΙΟΥ")
-auto_suggestion_dropdown('''//*[@id="select2-klot-container"]/span''', "ΧΕΡΣΟΝΗΣΟΥ")
-auto_suggestion_dropdown('''//*[@id="select2-klde-container"]/span''', "ΓΟΥΒΩΝ")
+auto_suggestion_dropdown('''//*[@id="select2-klpe-container"]/span''', region)
+auto_suggestion_dropdown('''//*[@id="select2-klno-container"]/span''', regional_unity)
+auto_suggestion_dropdown('''//*[@id="select2-klot-container"]/span''', municipality)
+auto_suggestion_dropdown('''//*[@id="select2-klde-container"]/span''', city_section)
 driver.find_element(By.ID, "taxcode").send_keys(postal_code)
 dropdown_selection("idka", "02")
 dropdown_selection("eipeak", "02")
 dropdown_selection("xwro", "1")
 driver.find_element(By.ID, "next").click()
+
+# Sixth Page Filling out / Δικαιολογητικά
+attach_files('''//*[@id="file02"]''', "C:/Users/Spiros/Desktop/Screenshots/unit_decimal.jpg", "apupload02")
+time.sleep(2)
+attach_files('''//*[@id="file04"]''', "C:/Users/Spiros/Desktop/Screenshots/unit_decimal.jpg", "apupload04")
+attach_files('''//*[@id="file05"]''', "C:/Users/Spiros/Desktop/Screenshots/unit_decimal.jpg", "apupload05")
+time.sleep(2)
+attach_files('''//*[@id="file06"]''', "C:/Users/Spiros/Desktop/Screenshots/unit_decimal.jpg", "apupload06")
+time.sleep(2)
+attach_files('''//*[@id="file07"]''', "C:/Users/Spiros/Desktop/Screenshots/unit_decimal.jpg", "apupload07")
+time.sleep(2)
+attach_files('''//*[@id="file09"]''', "C:/Users/Spiros/Desktop/Screenshots/unit_decimal.jpg", "apupload09")
+attach_files('''//*[@id="file09a"]''', "C:/Users/Spiros/Desktop/Screenshots/unit_decimal.jpg", "apupload09a")
+time.sleep(2)
+attach_files('''//*[@id="file10"]''', "C:/Users/Spiros/Desktop/Screenshots/unit_decimal.jpg", "apupload10")
+time.sleep(2)
+attach_files('''//*[@id="file12"]''', "C:/Users/Spiros/Desktop/Screenshots/unit_decimal.jpg", "apupload12")
+time.sleep(2)
+attach_files('''//*[@id="file13"]''', "C:/Users/Spiros/Desktop/Screenshots/unit_decimal.jpg", "apupload13")
+time.sleep(2)
+attach_files('''//*[@id="file16a"]''', "C:/Users/Spiros/Desktop/Screenshots/unit_decimal.jpg", "apupload16a")
+time.sleep(2)
+attach_files('''//*[@id="file17"]''', "C:/Users/Spiros/Desktop/Screenshots/unit_decimal.jpg", "apupload17")
+driver.find_element(By.XPATH, '''//*[@id="next"]''').click()
+
+# Seventh Page / Tick Boxes
+driver.find_element(By.XPATH, '''//*[@id="invalidCheck60"]''').click()
+driver.find_element(By.XPATH, '''//*[@id="invalidCheck61"]''').click()
+driver.find_element(By.XPATH, '''//*[@id="invalidCheck62"]''').click()
+driver.find_element(By.XPATH, '''//*[@id="invalidCheck63"]''').click()
+driver.find_element(By.XPATH, '''//*[@id="invalidCheck99"]''').click()
+# next button:
+driver.find_element(By.XPATH, '''//*[@id="next"]''').click()
+
+# Eighth Page / Submit the Form
+# driver.find_element(By.XPATH, '''//*[@id="submit-all"]''').click()
+
