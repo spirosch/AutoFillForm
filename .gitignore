@@ -1,3 +1,6 @@
 *.xlsx
 *.rar
 *.txt
+*.idea
+*.yml
+*.yaml
