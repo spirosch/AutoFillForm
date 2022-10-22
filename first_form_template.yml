@@ -1,0 +1,36 @@
+---
+management:
+  url: https://apps.deddie.gr/apewebportal-ws/index.html
+
+login_page:
+  username: test
+  password: test
+ata
+steps:
+- step: 1
+  distrinctive_title: "ΒΙΓΛΑ ΕΝΕΡΓΕΙΑΚΗ ΜΟΝΟΠΡΟΣΩΠΗ ΙΚΕ"
+  tax_mail: "Λ.ΠΑΠΑΝΑΣΤΑΣΙΟΥ 23Α, ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ, Τ.Κ 71306"
+  phone_number: "6952652565"
+  email: "boulbasisdim@gmail.com"
+- step: 2
+  legal_representative: "ΜΠΟΥΛΜΠΑΣΗΣ ΔΗΜΗΤΡΙΟΣ"
+  VAT_number: "141374588"
+  legal_headquarters: "ΜΝΗΣΙΚΛΗ 41 71305 ΗΡΑΚΛΕΙΟ"
+  legal_taxmail: "Λ.ΠΑΠΑΝΑΣΤΑΣΙΟΥ 23Α, ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ, Τ.Κ 71306"
+  legal_phone_number: "2810244114"
+  legal_email: "boulbasisdim@gmail.com"
+- step: 3
+  engineer_name: "ΚΩΝΣΤΑΝΤΙΝΟΣ ΣΥΡΙΓΩΝΑΚΗΣ"
+  engineer_specialty: "ΗΛΕΚΤΡΟΛΟΓΟΣ ΜΗΧΑΝΙΚΟΣ"
+  engineer_VAT: "116656649"
+  engineer_residence: "ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ"
+  engineer_taxmail: "Λ.ΠΑΠΑΝΑΣΤΑΣΙΟΥ 23Α, ΗΡΑΚΛΕΙΟ ΚΡΗΤΗΣ, Τ.Κ 71306"
+  engineer_phone_number: "2815103020"
+  engineer_email: "info@palsengineering.com"
+- step: 4
+  toponym_place: "ΒΙΓΛΑ"
+  postal_code: "70014"
+  region: "ΚΡΗΤΗΣ"
+  regional_unity: "ΗΡΑΚΛΕΙΟΥ"
+  municipality: "ΧΕΡΣΟΝΗΣΟΥ"
+  city_section: "ΓΟΥΒΩΝ"
