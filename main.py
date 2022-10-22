@@ -112,7 +112,7 @@ driver.find_element(By.ID, "taxmail").send_keys(tax_mail)
 driver.find_element(By.ID, "thle").send_keys(phone_number)
 driver.find_element(By.ID, "email").send_keys(email)
 driver.find_element(By.ID, "next").click()
-
+print("--0...0--")
 # Filling out Second Page / Στοιχεία Νόμιμου Εκπροσώπου
 driver.find_element(By.ID, "epon_noek1").send_keys(legal_representative)
 driver.find_element(By.ID, "afm_noek1").send_keys(VAT_number)
@@ -143,7 +143,8 @@ driver.find_element(By.ID, "taxmail_mech1").send_keys(engineer_taxmail)
 driver.find_element(By.ID, "thle_mech1").send_keys(engineer_phone_number)
 driver.find_element(By.ID, "email_mech1").send_keys(engineer_email)
 driver.find_element(By.ID, "next").click()
-
+print("--0...0--")
+print("--0...0--")
 # Filling out Fourth Page / Στοιχεία σταθμού
 time.sleep(2)
 dropdown_selection("eipa", "01")
@@ -190,7 +191,7 @@ attach_files('''//*[@id="file16a"]''', "C:/Users/Spiros/Desktop/Screenshots/unit
 time.sleep(2)
 attach_files('''//*[@id="file17"]''', "C:/Users/Spiros/Desktop/Screenshots/unit_decimal.jpg", "apupload17")
 driver.find_element(By.XPATH, '''//*[@id="next"]''').click()
-
+print("--0...0--")
 # Seventh Page / Tick Boxes
 driver.find_element(By.XPATH, '''//*[@id="invalidCheck60"]''').click()
 driver.find_element(By.XPATH, '''//*[@id="invalidCheck61"]''').click()
