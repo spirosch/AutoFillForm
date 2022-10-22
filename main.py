@@ -4,6 +4,7 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.common.keys import Keys
 import time
+import pandas as pd
 
 username = "test"
 password = "test"
@@ -38,7 +39,6 @@ region = "ΝΟΤΙΟΥ ΑΙΓΑΙΟΥ"
 regional_unity = "ΘΗΡΑΣ"
 municipality = "ΣΙΚΙΝΟΥ"
 city_section = "ΣΙΚΙΝΟΥ"
-
 
 
 def dropdown_selection(box_select_id, choose_option):
